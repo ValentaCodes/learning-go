@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/gin-gonic/gin"
 
 	"net/http"
@@ -18,11 +16,11 @@ func main() {
 
 // declare struct data
 type analysis struct {
-	Mood string `json:"mood"`
-	SentimentScore int `json:"sentimentScore"`
-	Summary string `json:"summary"`
-	Subject string `json:"subject"`
-	Color string `json:"color"`
+	Mood           string `json:"mood"`
+	SentimentScore int    `json:"sentimentScore"`
+	Summary        string `json:"summary"`
+	Subject        string `json:"subject"`
+	Color          string `json:"color"`
 }
 
 // create slice of analysis
@@ -32,7 +30,7 @@ var aiAnalysis = []analysis{
 }
 
 // function getting data
-func getAnalysis(context *gin.Context){
+func getAnalysis(context *gin.Context) {
 	context.IndentedJSON(http.StatusOK, aiAnalysis)
 	// fmt.Println(results)
 }
