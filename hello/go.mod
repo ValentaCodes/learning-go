@@ -6,4 +6,4 @@ replace example.com/greetings => ../greetings
 
 require example.com/greetings v0.0.0-00010101000000-000000000000
 
-require golang.org/x/example/hello v0.0.0-20230901165430-d9923f6970e9 // indirect
+require golang.org/x/example/hello v0.0.0-20230901165430-d9923f6970e9
